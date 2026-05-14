@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/bg_surface_card"
+    android:elevation="1dp">
+
+    <TextView
+        android:id="@+id/textType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="FULL_BODY"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/text_primary"/>
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2026-02-25 12:34"
+        android:textColor="@color/text_secondary"
+        android:layout_marginTop="4dp"/>
+
+    <!-- Nem kattintható “detail” preview -->
+    <com.example.clientmanagerapp.ui.viewmodel.PainMapFullBodyPreviewView
+        android:id="@+id/painPreview"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="Pain map preview" />
+
+    <TextView
+        android:id="@+id/textNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="notes..."
+        android:textColor="@color/text_primary"
+        android:layout_marginTop="10dp" />
+
+    <com.example.clientmanagerapp.ui.viewmodel.PainMapAbsPreviewView
+        android:id="@+id/absPreview"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone" />
+
+    <com.example.clientmanagerapp.ui.viewmodel.PainMapFootPreviewView
+        android:id="@+id/footPreview"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

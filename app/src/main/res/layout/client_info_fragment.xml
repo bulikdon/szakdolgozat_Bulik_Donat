@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/bg_app_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/bg_surface_card">
+
+        <!-- Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            style="@style/AppLabel" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="12dp"
+            style="@style/AppEditText"/>
+
+        <!-- Sex -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sex"
+            style="@style/AppLabel" />
+
+        <Spinner
+            android:id="@+id/spinnerSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Birth date -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Birth date (yyyy-MM-dd)"
+            style="@style/AppLabel" />
+
+        <EditText
+            android:id="@+id/editBirthDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:focusable="false"
+            android:clickable="true"
+            android:hint="yyyy-MM-dd"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="12dp"
+            style="@style/AppEditText"/>
+
+        <!-- Phone -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            style="@style/AppLabel" />
+
+        <EditText
+            android:id="@+id/editPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:inputType="phone"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="12dp"
+            style="@style/AppEditText"/>
+
+        <!-- Height -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Height (cm)"
+            style="@style/AppLabel" />
+
+        <EditText
+            android:id="@+id/editHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:inputType="numberDecimal"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="12dp"
+            style="@style/AppEditText"/>
+
+        <!-- Weight -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weight (kg)"
+            style="@style/AppLabel" />
+
+        <EditText
+            android:id="@+id/editWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:inputType="numberDecimal"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="12dp"
+            style="@style/AppEditText"/>
+
+        <!-- Weight distribution -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weight distribution"
+            style="@style/AppLabel" />
+
+        <SeekBar
+            android:id="@+id/seekDistribution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/textDistribution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Left 50% — Right 50%"
+            android:textColor="@color/text_primary"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonEdit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit"
+                style="@style/AppButton" />
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:enabled="false"
+                android:layout_marginTop="8dp"
+                style="@style/AppButton"/>
+
+            <Button
+                android:id="@+id/buttonDelete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:layout_marginTop="8dp"
+                style="@style/AppButton.Outline"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

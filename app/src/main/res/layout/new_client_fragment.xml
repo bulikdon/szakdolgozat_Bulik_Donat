@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp"
+        android:layout_margin="12dp"
+        android:background="@drawable/bg_surface_card">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NEW CLIENT SCREEN LOADED"
+            style="@style/AppHeader"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Cltient"
+            style="@style/AppLabel"
+            android:layout_marginBottom="12dp"/>
+
+        <EditText
+            android:id="@+id/inputName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            style="@style/AppEditText"/>
+
+        <Spinner
+            android:id="@+id/inputSex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"/>
+
+        <EditText
+            android:id="@+id/inputBirthDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="yyyy-MM-dd"
+            android:focusable="false"
+            android:clickable="true"
+            android:textColor="@color/text_primary"
+            style="@style/AppEditText"/>
+
+        <EditText
+            android:id="@+id/inputPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone"
+            android:inputType="phone"
+            android:layout_marginTop="12dp"
+            style="@style/AppEditText"/>
+
+        <EditText
+            android:id="@+id/inputHeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Height (cm)"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="12dp"
+            style="@style/AppEditText"/>
+
+        <EditText
+            android:id="@+id/inputWeight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Weight (kg)"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="12dp"
+            style="@style/AppEditText"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight distribution (Left ↔ Right)"
+            android:layout_marginTop="16dp"/>
+
+        <SeekBar
+            android:id="@+id/inputDistribution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:progress="50"/>
+
+        <TextView
+            android:id="@+id/textDistributionValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Left 50% — Right 50%"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            style="@style/AppButton"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/existingClientsFragment">
+
+    <fragment
+        android:id="@+id/newClientFragment"
+        android:name="com.example.clientmanagerapp.ui.fragments.NewClientFragment"
+        android:label="New Patient" />
+
+    <fragment
+        android:id="@+id/existingClientsFragment"
+        android:name="com.example.clientmanagerapp.ui.fragments.ExistingClientsFragment"
+        android:label="Existing Patients">
+
+        <action
+            android:id="@+id/action_existing_to_clientDetail"
+            app:destination="@id/clientDetailFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/clientDetailFragment"
+        android:name="com.example.clientmanagerapp.ui.fragments.ClientDetailFragment"
+        android:label="Patient Details">
+
+        <action
+            android:id="@+id/action_clientDetail_to_treatments"
+            app:destination="@id/treatmentsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/treatmentsFragment"
+        android:name="com.example.clientmanagerapp.ui.fragments.TreatmentSelectionFragment"
+        android:label="Treatments">
+
+        <action
+            android:id="@+id/action_treatments_to_fullBody"
+            app:destination="@id/fullBodyTreatmentFragment" />
+
+        <action
+            android:id="@+id/action_treatments_to_abs"
+            app:destination="@id/absTreatmentFragment" />
+
+        <action
+            android:id="@+id/action_treatments_to_foot"
+            app:destination="@id/footTreatmentFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fullBodyTreatmentFragment"
+        android:name="com.example.clientmanagerapp.ui.fragments.FullBodyTreatmentFragment"
+        android:label="Full Body Treatment" />
+
+    <fragment
+        android:id="@+id/absTreatmentFragment"
+        android:name="com.example.clientmanagerapp.ui.fragments.AbsTreatmentFragment"
+        android:label="Abs Treatment" />
+
+    <fragment
+        android:id="@+id/footTreatmentFragment"
+        android:name="com.example.clientmanagerapp.ui.fragments.FootTreatmentFragment"
+        android:label="Foot Treatment" />
+
+</navigation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material Design Green Palette -->
+    <color name="green_50">#F2FFF6</color>
+    <color name="green_100">#DDF5E5</color>
+    <color name="green_300">#96D9AB</color>
+    <color name="green_500">#38A169</color>
+    <color name="green_700">#1F7A4D</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#173425</color>
+    <color name="text_secondary">#4D6B5C</color>
+
+    <!-- UI Elements -->
+    <color name="stroke_soft">#C9E8D3</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+</resources>
